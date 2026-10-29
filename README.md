@@ -2,7 +2,7 @@
 
 An RSS/Atom reader with **anonymous, algorithm-free discovery**. Follow blogs directly, read full articles offline, and find new blogs from co-subscription counts. No accounts, no tracking.
 
-Live demo: _add your deployed URL here_
+Live demo: (https://small-web-reader.onrender.com/)
 
 ## Architecture
 
