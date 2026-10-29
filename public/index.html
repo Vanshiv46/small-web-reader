@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Small Web Reader</title>
+<meta name="description" content="Follow blogs directly. Read them offline. Find new ones without being tracked.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side" aria-label="Your blogs">
+    <h1 class="brand">Small Web <span>Reader</span></h1>
+    <form id="addForm" class="add">
+      <label for="addInput">Add a blog</label>
+      <div class="row"><input id="addInput" placeholder="example.com or a feed link" autocomplete="off" required><button>Add</button></div>
+      <p id="addMsg" class="msg" role="status"></p>
+    </form>
+    <nav id="feedList" class="feeds"></nav>
+  </aside>
+  <main class="main">
+    <header class="top">
+      <div><h2 id="greet"></h2><p id="sub" class="muted"></p></div>
+      <div class="tabs" role="tablist">
+        <button role="tab" id="tabTimeline" aria-selected="true">Timeline</button>
+        <button role="tab" id="tabDiscover" aria-selected="false">Discover</button>
+      </div>
+    </header>
+    <section id="timeline"></section>
+    <section id="discover" hidden></section>
+  </main>
+  <article id="reader" class="reader" hidden aria-label="Reading view"></article>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@mozilla/readability@0.5.0/Readability.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

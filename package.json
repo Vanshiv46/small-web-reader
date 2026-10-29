@@ -1,0 +1,16 @@
+{
+  "name": "small-web-reader",
+  "version": "1.0.0",
+  "description": "Anonymous-discovery RSS/Atom reader with offline reading",
+  "type": "module",
+  "scripts": {
+    "start": "node --no-warnings server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=22.5"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

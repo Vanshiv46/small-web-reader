@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: small-web-reader
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: APP_SECRET
+        generateValue: true
+      - key: IP_SALT
+        generateValue: true
